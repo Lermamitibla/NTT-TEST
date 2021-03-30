@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NTT_TEST_client
+namespace NTT_TEST_server
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml

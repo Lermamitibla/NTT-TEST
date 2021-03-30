@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace NTT_TEST_client.ViewModel
+namespace NTT_TEST_server.ViewModel
 {
         abstract class BaseVM : INotifyPropertyChanged
         {

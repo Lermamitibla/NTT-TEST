@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90A6614A-6E43-498E-A8AE-95D0102EDB5C}</ProjectGuid>
+    <ProjectGuid>{A5FDE588-D8D0-4A5E-8F4B-5A45CE234587}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>NTT_TEST_client</RootNamespace>
-    <AssemblyName>NTT-TEST client</AssemblyName>
+    <RootNamespace>NTT_TEST</RootNamespace>
+    <AssemblyName>NTT-TEST</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -63,6 +63,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Commands\BaseCommand.cs" />
+    <Compile Include="Commands\LambdaCommand.cs" />
     <Compile Include="ViewModel\BaseVM.cs" />
     <Compile Include="ViewModel\MainVM.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
@@ -98,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChatService\WCFChat.csproj">
+      <Project>{bc8c2ebe-65ba-45bd-abdf-b70f9003a9a7}</Project>
+      <Name>WCFChat</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
